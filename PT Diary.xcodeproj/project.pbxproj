@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E1D22F91EF5AE7200FDDD19 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1D22F81EF5AE7200FDDD19 /* ClientViewController.swift */; };
 		1E6BC34B1EF4162D0034D97F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BC34A1EF4162D0034D97F /* AppDelegate.swift */; };
-		1E6BC34D1EF4162D0034D97F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BC34C1EF4162D0034D97F /* ViewController.swift */; };
+		1E6BC34D1EF4162D0034D97F /* ClientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BC34C1EF4162D0034D97F /* ClientListViewController.swift */; };
 		1E6BC3501EF4162D0034D97F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6BC34E1EF4162D0034D97F /* Main.storyboard */; };
 		1E6BC3531EF4162D0034D97F /* PT_Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BC3511EF4162D0034D97F /* PT_Diary.xcdatamodeld */; };
 		1E6BC3551EF4162D0034D97F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6BC3541EF4162D0034D97F /* Assets.xcassets */; };
 		1E6BC3581EF4162D0034D97F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6BC3561EF4162D0034D97F /* LaunchScreen.storyboard */; };
 		1E6BC3631EF4162D0034D97F /* PT_DiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BC3621EF4162D0034D97F /* PT_DiaryTests.swift */; };
 		1E6BC36E1EF4162D0034D97F /* PT_DiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BC36D1EF4162D0034D97F /* PT_DiaryUITests.swift */; };
+		1E7EBD581EF42C27000998A2 /* NewClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7EBD571EF42C27000998A2 /* NewClientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E1D22F81EF5AE7200FDDD19 /* ClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		1E6BC3471EF4162D0034D97F /* PT Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PT Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6BC34A1EF4162D0034D97F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E6BC34C1EF4162D0034D97F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E6BC34C1EF4162D0034D97F /* ClientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientListViewController.swift; sourceTree = "<group>"; };
 		1E6BC34F1EF4162D0034D97F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E6BC3521EF4162D0034D97F /* PT_Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PT_Diary.xcdatamodel; sourceTree = "<group>"; };
 		1E6BC3541EF4162D0034D97F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		1E6BC3691EF4162D0034D97F /* PT DiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PT DiaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6BC36D1EF4162D0034D97F /* PT_DiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PT_DiaryUITests.swift; sourceTree = "<group>"; };
 		1E6BC36F1EF4162D0034D97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E7EBD571EF42C27000998A2 /* NewClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				1E6BC34A1EF4162D0034D97F /* AppDelegate.swift */,
-				1E6BC34C1EF4162D0034D97F /* ViewController.swift */,
+				1E6BC34C1EF4162D0034D97F /* ClientListViewController.swift */,
+				1E7EBD571EF42C27000998A2 /* NewClientViewController.swift */,
+				1E1D22F81EF5AE7200FDDD19 /* ClientViewController.swift */,
 				1E6BC34E1EF4162D0034D97F /* Main.storyboard */,
 				1E6BC3541EF4162D0034D97F /* Assets.xcassets */,
 				1E6BC3561EF4162D0034D97F /* LaunchScreen.storyboard */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E7EBD581EF42C27000998A2 /* NewClientViewController.swift in Sources */,
 				1E6BC3531EF4162D0034D97F /* PT_Diary.xcdatamodeld in Sources */,
-				1E6BC34D1EF4162D0034D97F /* ViewController.swift in Sources */,
+				1E6BC34D1EF4162D0034D97F /* ClientListViewController.swift in Sources */,
+				1E1D22F91EF5AE7200FDDD19 /* ClientViewController.swift in Sources */,
 				1E6BC34B1EF4162D0034D97F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +536,7 @@
 				1E6BC3741EF4162D0034D97F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E6BC3751EF4162D0034D97F /* Build configuration list for PBXNativeTarget "PT DiaryTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +545,7 @@
 				1E6BC3771EF4162D0034D97F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E6BC3781EF4162D0034D97F /* Build configuration list for PBXNativeTarget "PT DiaryUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +554,7 @@
 				1E6BC37A1EF4162D0034D97F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
