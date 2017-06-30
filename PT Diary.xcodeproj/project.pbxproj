@@ -17,6 +17,7 @@
 		1E6BC3631EF4162D0034D97F /* PT_DiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BC3621EF4162D0034D97F /* PT_DiaryTests.swift */; };
 		1E6BC36E1EF4162D0034D97F /* PT_DiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BC36D1EF4162D0034D97F /* PT_DiaryUITests.swift */; };
 		1E7EBD581EF42C27000998A2 /* NewClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7EBD571EF42C27000998A2 /* NewClientViewController.swift */; };
+		1EA0FCF71EFD3406004C15F1 /* WeekStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0FCF61EFD3406004C15F1 /* WeekStatsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1E6BC36D1EF4162D0034D97F /* PT_DiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PT_DiaryUITests.swift; sourceTree = "<group>"; };
 		1E6BC36F1EF4162D0034D97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E7EBD571EF42C27000998A2 /* NewClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientViewController.swift; sourceTree = "<group>"; };
+		1EA0FCF61EFD3406004C15F1 /* WeekStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekStatsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				1E6BC34C1EF4162D0034D97F /* ClientListViewController.swift */,
 				1E7EBD571EF42C27000998A2 /* NewClientViewController.swift */,
 				1E1D22F81EF5AE7200FDDD19 /* ClientViewController.swift */,
+				1EA0FCF61EFD3406004C15F1 /* WeekStatsViewController.swift */,
 				1E6BC34E1EF4162D0034D97F /* Main.storyboard */,
 				1E6BC3541EF4162D0034D97F /* Assets.xcassets */,
 				1E6BC3561EF4162D0034D97F /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			files = (
 				1E7EBD581EF42C27000998A2 /* NewClientViewController.swift in Sources */,
 				1E6BC3531EF4162D0034D97F /* PT_Diary.xcdatamodeld in Sources */,
+				1EA0FCF71EFD3406004C15F1 /* WeekStatsViewController.swift in Sources */,
 				1E6BC34D1EF4162D0034D97F /* ClientListViewController.swift in Sources */,
 				1E1D22F91EF5AE7200FDDD19 /* ClientViewController.swift in Sources */,
 				1E6BC34B1EF4162D0034D97F /* AppDelegate.swift in Sources */,
@@ -344,6 +348,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -399,6 +405,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -433,6 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8GT4MJG4L6;
 				INFOPLIST_FILE = "PT Diary/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ryanball.PT-Diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8GT4MJG4L6;
 				INFOPLIST_FILE = "PT Diary/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ryanball.PT-Diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
