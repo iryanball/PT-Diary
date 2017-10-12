@@ -9,9 +9,11 @@
 import UIKit
 import CoreData
 
-class ClientListViewController: UIViewController, UITabBarDelegate, UITableViewDataSource {
+var clientItems : [Client] = []
+
+class ClientListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var clientItems : [Client] = []
+    
     
     @available(iOS 2.0, *)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,15 +36,14 @@ class ClientListViewController: UIViewController, UITabBarDelegate, UITableViewD
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
         do {
-        clientItems = try context.fetch(Client.fetchRequest())
+            clientItems = try context.fetch(Client.fetchRequest())
         } catch {
             print("Fetch Failed")
-            
         }
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
         if editingStyle == .delete {
             let item = clientItems[indexPath.row]
@@ -53,7 +54,6 @@ class ClientListViewController: UIViewController, UITabBarDelegate, UITableViewD
                 clientItems = try context.fetch(Client.fetchRequest())
             } catch {
                 print("Fetch Failed")
-                
             }
         }
         tableView.reloadData()
@@ -64,14 +64,26 @@ class ClientListViewController: UIViewController, UITabBarDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        navigationController?.navigationBar.prefersLargeTitles = true
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         getData()
-        
         tableView.reloadData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue" {
+            
+            let destinationVC = segue.destination as! ClientViewController
+            let indexPath = tableView.indexPathForSelectedRow
+            let client = clientItems[(indexPath?.row)!]
+            destinationVC.client = client
+            
+        }
+    }
 }
-
